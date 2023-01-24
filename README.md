@@ -16,26 +16,49 @@ Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métr
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 * ¿Qué es una variable y para qué sirve?
+> Una variable es un espacio en memoria, que se encarga de almacenar un tipo de dato.
 * ¿Cuál es la diferencia entre declarar e inicializar una variable?
+> Declarar corresponde a la accion de crear una variable con algun nombre significztivo. En cambio, Inicializar corresponde a asignarle un valor a esa variable.
+```js
+var edad; //Declarar
+edad = 30; // Inicializar ¿
+```
 * ¿Cuál es la diferencia entre sumar números y concatenar strings?
+> La concatenacion consiste en unir dos bloques String para formar una frase, en cambio, sumar dos numeros arroja el resultado de una operacion aritmetica de suma.
 * ¿Cuál operador me permite sumar o concatenar?
+> El operador aritmetico suma (+)
 
 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-* Nombre
-* Apellido
-* Nombre de usuario en Platzi
-* Edad
-* Correo electrónico
-* Mayor de edad
-* Dinero ahorrado
-* Deudas
+* Nombre: string 
+* Apellido: string 
+* Nombre de usuario en Platzi: string
+* Edad: number
+* Correo electrónico: string
+* Mayor de edad: boolean
+* Dinero ahorrado: number
+* Deudas: number
 
 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
-
+```js
+let nombre = 'Daniel';
+let apellido = 'Lozano';
+let username = 'dlozano82';
+let edad = 22;
+let email = 'dcardoso122@gmail.com';
+let esMayorDeEdad = true;
+let dineroAhorrado = 1200000;
+let deudas = 0;
+```
 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 * Nombre completo (nombre y apellido)
 * Dinero real (dinero ahorrado menos deudas)
+```js
+let nombreCompleto = nombre + ' ' + apellido;
+let dineroReal = dineroAhorrado - deudas;
+console.log(nombreCompleto);
+console.log(dineroReal);
+```
 
 ## Funciones
 
