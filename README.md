@@ -21,7 +21,7 @@ Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métr
 > Declarar corresponde a la accion de crear una variable con algun nombre significztivo. En cambio, Inicializar corresponde a asignarle un valor a esa variable.
 ```js
 var edad; //Declarar
-edad = 30; // Inicializar ¿
+edad = 30; // Inicializar 
 ```
 * ¿Cuál es la diferencia entre sumar números y concatenar strings?
 > La concatenacion consiste en unir dos bloques String para formar una frase, en cambio, sumar dos numeros arroja el resultado de una operacion aritmetica de suma.
@@ -64,18 +64,21 @@ console.log(dineroReal);
 
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 * ¿Qué es una función?
+> Las funciones son bloques de código que solucionan un problema especifico. 
 * ¿Cuándo me sirve usar una función en mi código?
+> Cuando existen tareas repetitivas.
 * ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+> Los parametros son los datos que necesita una funcion para ejecutar el bloque de codigo. En cambio, los argumentos son los datos que se envian cuando se invoca la función.
 
 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
 ```js
-const name = "Juan David";
-const lastname = "Castro Gallego";
-const completeName = name + lastname;
-const nickname = "juandc";
+function saludo(name, lastname, nickname){
+   let completeName = name + ' ' + lastname;
+   console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+}
 
-console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+saludo('Daniel Alexander', 'Lozano Cardoso', 'Dani');
 ```
 
 ## Condicionales
