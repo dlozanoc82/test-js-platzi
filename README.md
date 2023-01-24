@@ -134,11 +134,16 @@ if (tipoDeSuscripcion == 'Free'){
 ## Ciclos
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 * ¿Qué es un ciclo?
+> Es la forma de ejecutar un bloque de codigo hasta que se cumpla cierta condicion
 * ¿Qué tipos de ciclos existen en JavaScript?
+> While, for, do while
 * ¿Qué es un ciclo infinito y por qué es un problema?
+> Es cuando la validacion de nuestros condicionales no se cumple y termina dañando la aplicacion.
 * ¿Puedo mezclar ciclos y condicionales?
+Si. los ciclos pueden encapsular cualquier bloque de codigo
 
 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+>Original
 ```js
 for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
@@ -148,10 +153,35 @@ for (let i = 10; i >= 2; i--) {
     console.log("El valor de i es: " + i);
 }
 ```
+>Replica
+```js
+let i=0;
 
+while(i<5){
+   console.log("El valor de i es: " + i);
+   i++;
+}
+
+let j=10;
+
+while(j>=2){
+   console.log("El valor de j es: " + j);
+   j--;
+}
+
+```
 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 💡 Pista: puedes usar la función prompt de JavaScript.
+```js
 
+let respuesta;
+
+while(respuesta != '4'){
+   let pregunta = prompt('¿Cuanto es 2 + 2?')
+   respuesta = pregunta;
+}
+
+```
 ## Listas 
 
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
