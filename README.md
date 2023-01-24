@@ -66,7 +66,7 @@ console.log(dineroReal);
 * ¿Qué es una función?
 > Las funciones son bloques de código que solucionan un problema especifico. 
 * ¿Cuándo me sirve usar una función en mi código?
-> Cuando existen tareas repetitivas.
+> Cuando existen tareas repetitivas (variables o bloques de codigo), para que puedan ser facilmente reutilizadas. Además nos sirve para mejorar la legibilidad de nuestro codigo. 
 * ¿Cuál es la diferencia entre parámetros y argumentos de una función?
 > Los parametros son los datos que necesita una funcion para ejecutar el bloque de codigo. En cambio, los argumentos son los datos que se envian cuando se invoca la función.
 
@@ -84,10 +84,15 @@ saludo('Daniel Alexander', 'Lozano Cardoso', 'Dani');
 ## Condicionales
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 * ¿Qué es un condicional?
+> Un condicional es una estructura que permite evaluar dos o mas expresiones y realizar determinadas acciones en JavaScript.
 * ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+> IF(else y else if) y switch. 
+> En el caso de Switch se valida siempre con la misma variable o condicion definida en el switch. Mientras que el condicional IF(else y else if) permite hacer combinaciones completamente distintas. 
 * ¿Puedo combinar funciones y condicionales?
+> Si, las funciones pueden encapsular cualquier bloque de codigo.
 
 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+> Original
 ```js
 const tipoDeSuscripcion = "Basic";
 
@@ -106,6 +111,23 @@ switch (tipoDeSuscripcion) {
        break;
 }
 ```
+> Replica
+```js
+let tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion == 'Free'){
+   console.log("Solo puedes tomar los cursos gratis");
+}else if (tipoDeSuscripcion == 'Basic'){
+   console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+}else if (tipoDeSuscripcion == 'Expert'){
+   console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+}else if (tipoDeSuscripcion == 'ExpertPlus'){
+   console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}else {
+   console.log("No tienes una cuenta en platzi");
+}
+```
+
 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
 
