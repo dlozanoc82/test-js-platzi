@@ -131,6 +131,25 @@ if (tipoDeSuscripcion == 'Free'){
 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
 
+```js
+
+const tipoDeSuscripciones = {
+   free: 'Solo puedes tomar los cursos gratis',
+   basic: 'Puedes tomar casi todos los cursos de Platzi durante un mes',
+   expert: 'Puedes tomar casi todos los cursos de Platzi durante un año',
+   expertPlus: 'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año',
+}
+
+function conseguirTipoSuscripcion(suscripcion){
+   if(tipoDeSuscripciones[suscripcion]){
+      console.log(tipoDeSuscripciones[suscripcion])
+      return;
+   }
+   console.warn('Este tipo de suscripcion no existe')
+}
+
+```
+
 ## Ciclos
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 * ¿Qué es un ciclo?
@@ -186,12 +205,44 @@ while(respuesta != '4'){
 
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 * ¿Qué es un array?
+> Es una lista de elementos.
+```js
+const array = [1, "Dos", true, false];
+```
 * ¿Qué es un objeto?
+> Es una lista de elementos, pero cada elemento tiene un nombre clave.
+```js
+const obj = {
+   nombre: 'Fulanito',
+   edad: 12,
+   comidasFavoritas: ['Pollo', 'Helado'],
+};
+```
 * ¿Cuándo es mejor usar objetos o arrays?
+> Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demás(la regla se puede incumplir). Mientras que en un objeto cuando los nombres de cada elemento son importantes para nuestro algoritmo.
 * ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+> Si. Los arrays pueden guardar objetos, y los onjetos pueden guardar arrays entre sus propiedades.
 
 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+```js
+function imprimirPrimerElementoArray(arr){
+   console.log(arr[0]);   
+}
+
+```
+
 
 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+```js
+function imprimirElementoPorElemento(arr){
+   for(i=0; i < arr.length; i++){
+      console.log(arr[i])
+   } 
+}
+```
+
 
 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+```js
+Object.values(obj);
+```
